@@ -2,45 +2,65 @@
 <html lang="en">
     <head>
         <title>Map Image</title>
-        <link rel="icon" type="images/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <style>
+            table {
+                border: 2px solid black;
+                border-collapse: collapse; /* Ensures borders are merged */
+                width: 100%; /* Optional: Makes the table full-width */
+                margin-bottom: 20px; /* Adds space below the table */
+            }
+            th, td {
+                border: 1px solid black; /* Adds borders to table cells */
+                padding: 8px; /* Adds padding inside cells */
+                text-align: left; /* Aligns text to the left */
+            }
+            th {
+                background-color: #f2f2f2; /* Adds a light gray background to headers */
+            }
+        </style>
     </head>
     <body>
         <table>
-            <thead><caption>Computer Upgrade Plan</caption>
-                <p>I want to upgrade my computer, this table will contain the table of parts I want to buy.</p>
+            <caption>Computer Upgrade Plan</caption>
+            <p>I want to upgrade my computer. This table contains the parts I want to buy.</p>
+            <thead>
                 <tr>
                     <th>Part</th>
                     <th>Price</th>
                     <th>Link</th>
                 </tr>
             </thead>
-            <tbody>                        <tr>
-                <td>CPU: 5900XT</td>
-                <td>$315.00</td>
-                <td><a href="https://www.amazon.com/AMD-RyzenTM-5900XT-32-Thread-Processor/dp/B0D6NMCZG1/ref=sr_1_1?sr=8-1" target="_blank">Link</a></td>
-            </tr>
-            <tr>
-                <td>GPU: 7800XT 16GB</td>
-                <td>$489.99</td>
-                <td><a href="https://www.amazon.com/XFX-Speedster-QICK319-Graphics-RX-78TQICKF9/dp/B0CGM92TW8/ref=sr_1_2?sr=8-2" target="_blank">Link</a>></td>
-            </tr>
-            <tr>
-                <td>NVME 4TB</td>
-                <td>$229.99</td>
-                <td><a href="https://www.amazon.com/Western-Digital-SN5000-Internal-Solid/dp/B0D7MLB76V/ref=sr_1_2_sspa?sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY" target="_blank">Link</a></a>></td>
-            </tr>
-        </tbody>
+            <tbody>
+                <tr>
+                    <td>CPU: 5900XT</td>
+                    <td>$315.00</td>
+                    <td><a href="https://www.amazon.com/AMD-RyzenTM-5900XT-32-Thread-Processor/dp/B0D6NMCZG1/ref=sr_1_1?sr=8-1" target="_blank">Link</a></td>
+                </tr>
+                <tr>
+                    <td>GPU: 7800XT</td>
+                    <td>$489.99</td>
+                    <td><a href="https://www.amazon.com/XFX-Speedster-QICK319-Graphics-RX-78TQICKF9/dp/B0CGM92TW8/ref=sr_1_2?sr=8-2" target="_blank">Link</a></td>
+                </tr>
+                <tr>
+                    <td>NVME 4TB</td>
+                    <td>$229.99</td>
+                    <td><a href="https://www.amazon.com/Western-Digital-SN5000-Internal-Solid/dp/B0D7MLB76V/ref=sr_1_2_sspa?sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY" target="_blank">Link</a></td>
+                </tr>
+            </tbody>
+        </table>
+
         <h1>This is map on an image</h1>
-        <p>this image is only clickable on certain places</p>
+        <p>This image is only clickable on certain places.</p>
         <img src="workplace.jpg" alt="Work Place" usemap="#workmap">
         <map name="workmap">
-            <area shape="rect" coords="34, 44, 270, 350" href="workplace.jpg">
+            <area shape="rect" coords="34, 44, 270, 350" href="workplace.jpg" alt="Workplace Area">
         </map>
+
         <h2>Click on the croissant and only the croissant</h2>
         <img src="frenchfood.jpg" alt="French Food" usemap="#coffee">
         <map name="coffee">
-            <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="frenchfood.jpg"> 
+            <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="frenchfood.jpg" alt="Croissant Area">
         </map>
-        </table>
     </body>
 </html>
