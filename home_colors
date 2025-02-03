@@ -1,0 +1,45 @@
+ <!doctype html>
+ <html lang="en-US">
+ <body>
+ <Title>Weeks 3 & 4 Test Page</title>
+ <h1>Week 3 & 4 Site</h1>
+ <p>This is a test site <br><br>
+ I am running it on my computer<br>
+ Locally</p>
+ <p>I will be using this site to test various things from <a href='https://www.w3schools.com/html/default.asp' target="_blank">W3 Schools</a></p>
+ <p>You have HTML headings, here they are:</p>
+ <hr1>Heading 1</hr1><br>
+ <hr2>Heading 2</hr2><br>
+ <hr3>Heading 3</hr3><br>
+ <hr4>Heading 4</hr4><br>
+ <hr5>Heading 5</hr5><br>
+ <hr6>Heading 6</hr6><br>
+ <p>This is an example of an image
+ <br>
+ <hr2 style="color:red;">A Lake In N. Korea</hr2>
+ </p>
+ <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Baitou_Mountain_Tianchi.jpg" alt="Lake Lianchi A Lake In N. Korea" width="779" height="563">
+ <p style="color:red;"><hr3>A Note</hr3><br>
+ I should note HTML is not case senstive, but generally you write the code in lower case.
+ <br>
+ Also I put this in red because I can
+ </p>
+ <hr2 style="front-size:500%;">Poem Solution</hr2>
+ <p>Want your text to look like a poem? Use the pre tags</p>
+ <pre>
+  My Bonnie lies over the ocean.
+  
+  My Bonnie lies over the sea.
+  
+  My Bonnie lies over the ocean.
+  
+  Oh, bring back my Bonnie to me.
+  </pre>
+  <!--I like this quote I think it relevant to todays times -->
+  <p>Here is my favorite quote</p>
+  <blockquote cite="https://www.goodreads.com/quotes/8244186-the-tree-of-liberty-must-be-refreshed-from-time-to" style="color:red;font-style;bold;">
+  “The tree of Liberty must be refreshed from time to time with the blood of patriots and tyrants.”
+  </blockquote>
+  <p>For color information please <a href='https://www.w3schools.com/html/html_colors.asp' target="_blank">go here</a></p>
+ </body>
+ </html>
