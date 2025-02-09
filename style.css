@@ -36,8 +36,7 @@ menu a:hover {
 
 menu a.active {
     background-color: #9E7C0C;
-    color: white;
-}
+    color: #9E7C0C; /* Ravens gold */
 
 /* Class Selectors */
 .hero {
