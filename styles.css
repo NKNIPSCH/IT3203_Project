@@ -1,23 +1,21 @@
-/* Element Selectors */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #241773; /* Ravens purple */
     color: white;
-}
-
-menu {
+ }
+ 
+ menu {
     background-color: black;
     margin: 0;
     padding: 15px 0;
     display: flex;
     justify-content: center;
     gap: 30px;
-}
-
-/* Element + Class Selector */
-menu a {
+ }
+ 
+ menu a {
     color: #9E7C0C; /* Ravens gold */
     text-decoration: none;
     font-size: 18px;
@@ -25,51 +23,47 @@ menu a {
     padding: 8px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
-}
-
-/* Pseudo-class Selectors */
-menu a:hover {
+ }
+ 
+ menu a:hover {
     color: white;
     background-color: #9E7C0C;
     transform: translateY(-2px);
-}
-
-menu a.active {
+ }
+ 
+ menu a.active {
     background-color: #9E7C0C;
     color: white;
-}
-
-/* Class Selectors */
-.hero {
+ }
+ 
+ .hero {
     padding: 50px 20px;
     background-color: #9E7C0C; /* Ravens gold */
     color: black;
     text-align: center;
     border-bottom: 4px solid black;
     margin-bottom: 30px;
-}
-
-.content {
+ }
+ 
+ .content {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     line-height: 1.6;
-}
-
-/* Descendant Selector */
-.content ul {
+ }
+ 
+ .content ul {
     text-align: left;
     margin: 20px 0;
     padding-left: 40px;
-}
-
-.content li {
+ }
+ 
+ .content li {
     margin-bottom: 10px;
-}
-
-/* Element Selectors with Multiple Properties */
-footer {
+ }
+ 
+ footer {
     background-color: black;
     color: white;
     text-align: center;
@@ -78,35 +72,60 @@ footer {
     width: 100%;
     bottom: 0;
     border-top: 2px solid #9E7C0C;
-}
-
-/* Multiple Element Selector */
-h1, h2, h3 {
+ }
+ 
+ h1, h2, h3 {
     color: #9E7C0C; /* Ravens gold */
     margin: 25px 0;
     font-family: 'Arial Black', sans-serif;
-}
-
-/* Direct Child Selector */
-.content > p {
+ }
+ 
+ .content > p {
     margin: 20px 0;
     line-height: 1.8;
-}
-
-/* Adjacent Sibling Selector */
-h2 + p {
+ }
+ 
+ h2 + p {
     font-size: 18px;
     font-weight: bold;
-}
-
-/* Attribute Selector */
-a[href$=".html"] {
+ }
+ 
+ a[href$=".html"] {
     border: 1px solid transparent;
-}
-
-/* Combination of Selectors */
-.content h2:first-of-type {
+ }
+ 
+ .content h2:first-of-type {
     font-size: 32px;
     border-bottom: 2px solid #9E7C0C;
     padding-bottom: 10px;
-}
+ }
+ 
+ section {
+    margin-bottom: 40px;
+    padding: 20px;
+ }
+ 
+ .two-column {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 20px 0;
+ }
+ 
+ .two-column > div {
+    flex: 1;
+ }
+ 
+ section h2 {
+    margin-bottom: 20px;
+ }
+ 
+ section h3 {
+    margin: 15px 0;
+ }
+ 
+ ol {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 40px;
+ }
