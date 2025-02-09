@@ -1,0 +1,63 @@
+body {
+   font-family: 'Comic Sans MS', cursive;
+   margin: 0;
+   padding: 0;
+   background-color: #FF00FF; /* Bright pink */
+   color: yellow;
+}
+
+menu {
+   background-color: red;
+   margin: 0;
+   padding: 15px 0;
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   border: 5px dashed green;
+}
+
+menu a {
+   color: white;
+   text-decoration: none;
+   font-size: 24px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+menu a:hover {
+   color: lime;
+   transform: rotate(5deg);
+   transition: all 0.3s;
+}
+
+.hero {
+   padding: 50px 20px;
+   background-color: orange;
+   color: blue;
+   text-align: center;
+   border: 10px dotted purple;
+}
+
+.content {
+   padding: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+   text-align: center;
+   background-color: black;
+}
+
+footer {
+   background-color: lime;
+   color: red;
+   text-align: center;
+   padding: 15px 0;
+   position: fixed;
+   width: 100%;
+   bottom: 0;
+   font-size: 20px;
+}
+
+h1, h2, h3 {
+   color: lime;
+   text-decoration: underline wavy orange;
+}
