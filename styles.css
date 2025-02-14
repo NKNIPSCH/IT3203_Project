@@ -56,7 +56,7 @@ menu a:hover {
 /* Content Section */
 .content {
    padding: 40px 20px;
-   max-width: 800px;
+   max-width: 1000px;
    margin: 0 auto;
 }
 
@@ -85,6 +85,45 @@ menu a:hover {
    text-decoration: underline;
 }
 
+/* Table Styles */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px 0;
+   background-color: #fff;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+th {
+   background-color: #1a73e8;
+   color: #fff;
+   padding: 12px;
+   text-align: left;
+   font-weight: bold;
+}
+
+td {
+   padding: 12px;
+   border-bottom: 1px solid #ddd;
+}
+
+tr:last-child td {
+   border-bottom: none;
+}
+
+tr:hover {
+   background-color: #f8f9fa;
+}
+
+/* Make tables responsive */
+@media screen and (max-width: 768px) {
+   table {
+       display: block;
+       overflow-x: auto;
+       white-space: nowrap;
+   }
+}
+
 /* Footer */
 footer {
    background-color: #333;
@@ -94,4 +133,9 @@ footer {
    position: fixed;
    width: 100%;
    bottom: 0;
+}
+
+/* Adjust body padding for fixed footer */
+body {
+   padding-bottom: 50px;
 }
