@@ -75,6 +75,16 @@ menu a:hover {
    margin-bottom: 10px;
 }
 
+.content a {
+   color: #1a73e8;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.content a:hover {
+   text-decoration: underline;
+}
+
 /* Footer */
 footer {
    background-color: #333;
