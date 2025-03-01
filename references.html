@@ -1,88 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>References</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .w3-sidebar {width: 250px;}
+        .content-container {margin-left: 250px; padding: 20px;}
+        .hero {background-color: #1a73e8; color: white; padding: 60px; text-align: center;}
+    </style>
 </head>
 <body>
-    <!-- Menu -->
-    <menu>
-        <a href="index.html">Home</a>
-        <a href="android.html">Android</a>
-        <a href="googleapps.html">Google Apps</a>
-        <a href="browser.html">Browser</a>
-        <a href="search.html">Search</a>
-        <a href="references.html">References</a>
-    </menu>
 
-    <!-- Hero Section -->
-    <section class="hero">
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-card w3-light-grey" id="mySidebar">
+    <h3 class="w3-bar-item">Menu</h3>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="android.html" class="w3-bar-item w3-button">Android</a>
+    <a href="googleapps.html" class="w3-bar-item w3-button">Google Apps</a>
+    <a href="browser.html" class="w3-bar-item w3-button">Browser</a>
+    <a href="search.html" class="w3-bar-item w3-button">Search</a>
+    <a href="references.html" class="w3-bar-item w3-button">References</a>
+</nav>
+
+<!-- Page Content -->
+<div class="content-container">
+    <div class="hero">
         <h1>References</h1>
         <p>Sources and citations for the information provided on this site.</p>
-    </section>
-
-    <!-- Content Section -->
-    <section class="content">
+    </div>
+    
+    <div class="w3-container w3-padding">
         <h2>Alternative Operating Systems</h2>
-        <ul>
-            <li>/e/ Foundation. (2025). /e/ OS - your data is your data. <a href="https://e.foundation/" target="_blank">https://e.foundation/</a></li>
-            <li>LineageOS. (2025). LineageOS – LineageOS Android Distribution. <a href="https://lineageos.org/" target="_blank">https://lineageos.org/</a></li>
-            <li>CalyxOS. (2025). CalyxOS - Privacy by Design. <a href="https://calyxos.org/" target="_blank">https://calyxos.org/</a></li>
-            <li>UBports Foundation. (2025). Ubuntu Touch. <a href="https://ubuntu-touch.io/" target="_blank">https://ubuntu-touch.io/</a></li>
-            <li>PINE64. (2025). PinePhone - PINE64. <a href="https://www.pine64.org/pinephone/" target="_blank">https://www.pine64.org/pinephone/</a></li>
+        <ul class="w3-ul w3-border">
+            <li><a href="https://e.foundation/" target="_blank">/e/ OS</a> - Privacy-first Android alternative.</li>
+            <li><a href="https://lineageos.org/" target="_blank">LineageOS</a> - Open-source Android distribution.</li>
+            <li><a href="https://calyxos.org/" target="_blank">CalyxOS</a> - Security and privacy-focused Android.</li>
+            <li><a href="https://ubuntu-touch.io/" target="_blank">Ubuntu Touch</a> - Linux-based mobile OS.</li>
+            <li><a href="https://www.pine64.org/pinephone/" target="_blank">PinePhone</a> - Open-source smartphone.</li>
         </ul>
-
-        <h2>App Stores and Applications</h2>
-        <ul>
-            <li>F-Droid. (2025). F-Droid - Free and Open Source Android App Repository. <a href="https://f-droid.org/" target="_blank">https://f-droid.org/</a></li>
-            <li>Aurora OSS. (2025). Aurora Store. <a href="https://aurora.store/" target="_blank">https://aurora.store/</a></li>
-            <li>APKPure. (2025). APKPure - Download APK. <a href="https://www.apkpure.com/" target="_blank">https://www.apkpure.com/</a></li>
-        </ul>
-
+        
         <h2>Privacy-Focused Email and Storage</h2>
-        <ul>
-            <li>Proton AG. (2025). Proton Mail - Encrypted Email. <a href="https://proton.me/mail" target="_blank">https://proton.me/mail</a></li>
-            <li>Tutanota. (2025). Secure email for everyone. <a href="https://tutanota.com/" target="_blank">https://tutanota.com/</a></li>
-            <li>Mozilla Foundation. (2025). Thunderbird. <a href="https://www.thunderbird.net/" target="_blank">https://www.thunderbird.net/</a></li>
-            <li>Nextcloud GmbH. (2025). Nextcloud. <a href="https://nextcloud.com/" target="_blank">https://nextcloud.com/</a></li>
+        <ul class="w3-ul w3-border">
+            <li><a href="https://proton.me/mail" target="_blank">Proton Mail</a> - Encrypted email provider.</li>
+            <li><a href="https://tutanota.com/" target="_blank">Tutanota</a> - Secure email with encryption.</li>
+            <li><a href="https://www.thunderbird.net/" target="_blank">Thunderbird</a> - Open-source email client.</li>
+            <li><a href="https://nextcloud.com/" target="_blank">Nextcloud</a> - Self-hosted cloud storage.</li>
         </ul>
+    </div>
+</div>
 
-        <h2>Office Suites and Collaboration Tools</h2>
-        <ul>
-            <li>The Document Foundation. (2025). LibreOffice. <a href="https://www.libreoffice.org/" target="_blank">https://www.libreoffice.org/</a></li>
-            <li>Ascensio System SIA. (2025). ONLYOFFICE. <a href="https://www.onlyoffice.com/" target="_blank">https://www.onlyoffice.com/</a></li>
-            <li>XWiki SAS. (2025). CryptPad. <a href="https://cryptpad.fr/" target="_blank">https://cryptpad.fr/</a></li>
-        </ul>
-
-        <h2>Browsers and Privacy Extensions</h2>
-        <ul>
-            <li>Brave Software. (2025). Brave Browser. <a href="https://brave.com/" target="_blank">https://brave.com/</a></li>
-            <li>Mozilla Foundation. (2025). Firefox Browser. <a href="https://www.mozilla.org/firefox/" target="_blank">https://www.mozilla.org/firefox/</a></li>
-            <li>LibreWolf. (2025). LibreWolf Browser. <a href="https://www.librewolf.net/" target="_blank">https://www.librewolf.net/</a></li>
-            <li>The Tor Project. (2025). Tor Browser. <a href="https://www.torproject.org/" target="_blank">https://www.torproject.org/</a></li>
-            <li>Raymond Hill. (2025). uBlock Origin. <a href="https://ublockorigin.com/" target="_blank">https://ublockorigin.com/</a></li>
-            <li>EFF. (2025). Privacy Badger. <a href="https://privacybadger.org/" target="_blank">https://privacybadger.org/</a></li>
-            <li>Thomas Rientjes. (2025). Decentraleyes. <a href="https://decentraleyes.org/" target="_blank">https://decentraleyes.org/</a></li>
-        </ul>
-
-        <h2>Search Engines</h2>
-        <ul>
-            <li>Brave Software. (2025). Brave Search. <a href="https://search.brave.com/" target="_blank">https://search.brave.com/</a></li>
-            <li>Duck Duck Go, Inc. (2025). DuckDuckGo. <a href="https://duckduckgo.com/" target="_blank">https://duckduckgo.com/</a></li>
-            <li>Startpage B.V. (2025). Startpage. <a href="https://www.startpage.com/" target="_blank">https://www.startpage.com/</a></li>
-            <li>Mojeek Ltd. (2025). Mojeek. <a href="https://www.mojeek.com/" target="_blank">https://www.mojeek.com/</a></li>
-        </ul>
-
-        <h2>Data Export Tools</h2>
-        <ul>
-            <li>Google. (2025). Google Takeout. <a href="https://takeout.google.com/" target="_blank">https://takeout.google.com/</a></li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Replace Google Products. All rights reserved.</p>
-    </footer>
 </body>
 </html>

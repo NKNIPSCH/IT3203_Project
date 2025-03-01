@@ -1,120 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Replace Browser</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .w3-sidebar {width: 250px;}
+        .content-container {margin-left: 250px; padding: 20px;}
+        .hero {background-color: #1a73e8; color: white; padding: 60px; text-align: center;}
+    </style>
 </head>
 <body>
-    <!-- Menu -->
-    <menu>
-        <a href="index.html">Home</a>
-        <a href="android.html">Android</a>
-        <a href="googleapps.html">Google Apps</a>
-        <a href="browser.html">Browser</a>
-        <a href="search.html">Search</a>
-        <a href="references.html">References</a>
-    </menu>
 
-    <!-- Hero Section -->
-    <section class="hero">
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-card w3-light-grey" id="mySidebar">
+    <h3 class="w3-bar-item">Menu</h3>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="android.html" class="w3-bar-item w3-button">Android</a>
+    <a href="googleapps.html" class="w3-bar-item w3-button">Google Apps</a>
+    <a href="browser.html" class="w3-bar-item w3-button">Browser</a>
+    <a href="search.html" class="w3-bar-item w3-button">Search</a>
+    <a href="references.html" class="w3-bar-item w3-button">References</a>
+</nav>
+
+<!-- Page Content -->
+<div class="content-container">
+    <div class="hero">
         <h1>Replace Chrome Browser</h1>
-        <p>Looking for a fast, private browser that works like Chrome but doesn't spy on you? We've got you covered.</p>
-    </section>
-
-    <!-- Content Section -->
-    <section class="content">
-        <h2>Why Brave is Our Top Pick</h2>
-        <p>While there are many browsers out there, <a href="https://brave.com/" target="_blank">Brave</a> stands out as the best Chrome replacement. It's built on the same system as Chrome (Chromium), but with major privacy improvements and extra features added.</p>
-
-        <p>The best part about Brave is that it works right out of the box. When you install it, you get:</p>
-        <ul>
-            <li>Built-in ad blocking - no need to install extra extensions</li>
-            <li>Tracker blocking that stops websites from following you</li>
-            <li>Fingerprint protection that makes it harder for sites to identify you</li>
-            <li>HTTPS upgrades that make your connections more secure</li>
+        <p>Looking for a fast, private browser that works like Chrome but doesn’t spy on you? Here are some options.</p>
+    </div>
+    
+    <div class="w3-container w3-padding">
+        <h2>Best Privacy-Focused Browsers</h2>
+        <ul class="w3-ul w3-border">
+            <li><strong><a href="https://brave.com/" target="_blank">Brave</a>:</strong> Blocks ads & trackers, fast browsing.</li>
+            <li><strong><a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a>:</strong> Highly customizable, strong privacy features.</li>
+            <li><strong><a href="https://www.librewolf.net/" target="_blank">LibreWolf</a>:</strong> Privacy-enhanced version of Firefox.</li>
+            <li><strong><a href="https://www.torproject.org/" target="_blank">Tor Browser</a>:</strong> Maximum privacy, access .onion sites.</li>
         </ul>
-
-        <p>Brave isn't just about privacy - it's also really fast. Because it blocks ads and trackers automatically, websites load 3-6 times faster than they do in Chrome. This also means your battery lasts longer and your computer runs better.</p>
-
-        <p>If you use Chrome extensions, don't worry - Brave works with most Chrome extensions. Plus, it has some cool extra features:</p>
-        <ul>
-            <li>Built-in Tor private tabs for extra privacy</li>
-            <li>Crypto wallet for Web3 stuff</li>
-            <li>Video calls with Brave Talk</li>
-            <li>Option to earn rewards for seeing privacy-respecting ads</li>
+        
+        <h2>Recommended Privacy Extensions</h2>
+        <ul class="w3-ul w3-border">
+            <li><strong><a href="https://ublockorigin.com/" target="_blank">uBlock Origin</a>:</strong> Best ad & tracker blocker.</li>
+            <li><strong><a href="https://privacybadger.org/" target="_blank">Privacy Badger</a>:</strong> Learns to block trackers as you browse.</li>
+            <li><strong><a href="https://decentraleyes.org/" target="_blank">Decentraleyes</a>:</strong> Prevents tracking through content delivery networks.</li>
         </ul>
+    </div>
+</div>
 
-        <h2>Other Browser Options</h2>
-        <p>While we recommend Brave, here are other good choices:</p>
-        <table>
-            <tr>
-                <th>Browser</th>
-                <th>Best For</th>
-                <th>Key Features</th>
-                <th>Privacy Level</th>
-            </tr>
-            <tr>
-                <td><a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a></td>
-                <td>Users who want a non-Chromium browser</td>
-                <td>Customizable, good privacy, lots of add-ons</td>
-                <td>Good</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.librewolf.net/" target="_blank">LibreWolf</a></td>
-                <td>Privacy-focused Firefox users</td>
-                <td>Firefox with stronger privacy settings</td>
-                <td>Very High</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.torproject.org/" target="_blank">Tor Browser</a></td>
-                <td>Maximum privacy needs</td>
-                <td>Complete anonymity, access to .onion sites</td>
-                <td>Maximum</td>
-            </tr>
-        </table>
-
-        <h2>Useful Privacy Extensions</h2>
-        <table>
-            <tr>
-                <th>Extension</th>
-                <th>Purpose</th>
-                <th>Why You Need It</th>
-                <th>Works In</th>
-            </tr>
-            <tr>
-                <td><a href="https://ublockorigin.com/" target="_blank">uBlock Origin</a></td>
-                <td>Ad & Tracker Blocking</td>
-                <td>Best ad blocker available (not needed in Brave)</td>
-                <td>Firefox, Chrome</td>
-            </tr>
-            <tr>
-                <td><a href="https://privacybadger.org/" target="_blank">Privacy Badger</a></td>
-                <td>Learns to block trackers</td>
-                <td>Gets better at privacy as you browse</td>
-                <td>All major browsers</td>
-            </tr>
-            <tr>
-                <td><a href="https://decentraleyes.org/" target="_blank">Decentraleyes</a></td>
-                <td>Local CDN emulation</td>
-                <td>Prevents CDN tracking</td>
-                <td>All major browsers</td>
-            </tr>
-        </table>
-
-        <h2>Switching to Brave</h2>
-        <p>Ready to make the switch? It's easy:</p>
-        <ol>
-            <li>Download Brave from <a href="https://brave.com/" target="_blank">brave.com</a></li>
-            <li>Install and open it - it will offer to import your Chrome data</li>
-            <li>Click yes to move over your bookmarks and passwords</li>
-            <li>Start enjoying faster, more private browsing</li>
-        </ol>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Replace Google Products. All rights reserved.</p>
-    </footer>
 </body>
 </html>

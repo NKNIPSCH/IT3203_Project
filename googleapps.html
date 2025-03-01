@@ -1,147 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Replace Google Apps</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .w3-sidebar {
+            width: 250px;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .content-container {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .hero {
+            background-color: #1a73e8;
+            color: white;
+            padding: 60px;
+            text-align: center;
+        }
+        @media screen and (max-width: 768px) {
+            .w3-sidebar {
+                width: 100%;
+                position: relative;
+            }
+            .content-container {
+                margin-left: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Menu -->
-    <menu>
-        <a href="index.html">Home</a>
-        <a href="android.html">Android</a>
-        <a href="googleapps.html">Google Apps</a>
-        <a href="browser.html">Browser</a>
-        <a href="search.html">Search</a>
-        <a href="references.html">References</a>
-    </menu>
-    <!-- Hero Section -->
-    <section class="hero">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-card w3-light-grey" id="mySidebar">
+    <h3 class="w3-bar-item">Menu</h3>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="android.html" class="w3-bar-item w3-button">Android</a>
+    <a href="googleapps.html" class="w3-bar-item w3-button">Google Apps</a>
+    <a href="browser.html" class="w3-bar-item w3-button">Browser</a>
+    <a href="search.html" class="w3-bar-item w3-button">Search</a>
+    <a href="references.html" class="w3-bar-item w3-button">References</a>
+</nav>
+
+<!-- Page Content -->
+<div class="content-container">
+    <div class="hero">
         <h1>Replace Google Apps</h1>
-        <p>We use Google apps every day, but there are other options out there that work just as well and respect your privacy.</p>
-    </section>
+        <p>Google apps are convenient but come with privacy concerns. Here are some privacy-respecting alternatives.</p>
+    </div>
+    
+    <div class="w3-container w3-padding">
+        <h2>Email Alternatives</h2>
+        <p>Google's Gmail tracks and analyzes emails for advertising purposes. Consider switching to these secure providers:</p>
+        <ul class="w3-ul w3-border">
+            <li><strong><a href="https://proton.me/mail" target="_blank">ProtonMail</a>:</strong> End-to-end encrypted, no tracking, based in Switzerland.</li>
+            <li><strong><a href="https://tutanota.com/" target="_blank">Tutanota</a>:</strong> Fully encrypted, includes an encrypted calendar.</li>
+            <li><strong><a href="https://www.zoho.com/mail/" target="_blank">Zoho Mail</a>:</strong> Business-focused, privacy-conscious alternative.</li>
+        </ul>
+        
+        <h2>Cloud Storage Alternatives</h2>
+        <p>Google Drive provides free cloud storage but scans files for content. Try these alternatives:</p>
+        <ul class="w3-ul w3-border">
+            <li><strong><a href="https://nextcloud.com/" target="_blank">Nextcloud</a>:</strong> Self-hosted cloud storage with complete control over your data.</li>
+            <li><strong><a href="https://www.sync.com/" target="_blank">Sync.com</a>:</strong> End-to-end encryption, 5GB free.</li>
+            <li><strong><a href="https://www.pcloud.com/" target="_blank">pCloud</a>:</strong> Secure storage with lifetime purchase options.</li>
+        </ul>
+        
+        <h2>Office Suite Alternatives</h2>
+        <p>Google Docs, Sheets, and Slides store all edits and can analyze content. These alternatives offer privacy:</p>
+        <ul class="w3-ul w3-border">
+            <li><strong><a href="https://www.libreoffice.org/" target="_blank">LibreOffice</a>:</strong> Free, open-source, offline office suite.</li>
+            <li><strong><a href="https://www.onlyoffice.com/" target="_blank">ONLYOFFICE</a>:</strong> Supports collaborative work with strong privacy controls.</li>
+            <li><strong><a href="https://cryptpad.fr/" target="_blank">CryptPad</a>:</strong> Fully encrypted, real-time collaboration.</li>
+        </ul>
+        
+        <h2>Navigation and Maps Alternatives</h2>
+        <p>Google Maps tracks your location history. Here are privacy-focused map services:</p>
+        <ul class="w3-ul w3-border">
+            <li><strong><a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>:</strong> Community-driven, open-source maps.</li>
+            <li><strong><a href="https://organicmaps.app/" target="_blank">Organic Maps</a>:</strong> Offline maps with no tracking.</li>
+            <li><strong><a href="https://www.maps.me/" target="_blank">Maps.me</a>:</strong> Privacy-focused, works offline.</li>
+        </ul>
+        
+        <h2>Steps to Transition Away from Google Apps</h2>
+        <p>Making the switch from Google services can be done gradually:</p>
+        <ol class="w3-ul w3-border">
+            <li><strong>Step 1:</strong> Export your data using <a href="https://takeout.google.com/" target="_blank">Google Takeout</a>.</li>
+            <li><strong>Step 2:</strong> Start using a privacy-focused email provider like ProtonMail.</li>
+            <li><strong>Step 3:</strong> Move cloud files to Nextcloud or Sync.com.</li>
+            <li><strong>Step 4:</strong> Switch to an alternative document editor like LibreOffice or ONLYOFFICE.</li>
+            <li><strong>Step 5:</strong> Replace Google Maps with OpenStreetMap or Organic Maps.</li>
+        </ol>
+    </div>
+</div>
 
-    <!-- Content Section -->
-    <section class="content">
-        <h2>Email (Gmail Alternatives)</h2>
-        <table>
-            <tr>
-                <th>App</th>
-                <th>Key Features</th>
-                <th>Storage</th>
-                <th>Cost</th>
-            </tr>
-            <tr>
-                <td><a href="https://proton.me/mail" target="_blank">ProtonMail</a></td>
-                <td>End-to-end encryption, custom domains, no tracking</td>
-                <td>1GB free</td>
-                <td>Free plan available, Premium from $3.99/mo</td>
-            </tr>
-            <tr>
-                <td><a href="https://tutanota.com/" target="_blank">Tutanota</a></td>
-                <td>Encrypted calendar included, simple interface</td>
-                <td>1GB free</td>
-                <td>Free plan available, Premium €1/mo</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.zoho.com/mail/" target="_blank">Zoho Mail</a></td>
-                <td>Business focused, works with your domain</td>
-                <td>5GB free</td>
-                <td>Free for personal use, Business plans available</td>
-            </tr>
-        </table>
-
-        <h2>Storage (Google Drive Alternatives)</h2>
-        <table>
-            <tr>
-                <th>App</th>
-                <th>Key Features</th>
-                <th>Storage</th>
-                <th>Cost</th>
-            </tr>
-            <tr>
-                <td><a href="https://nextcloud.com/" target="_blank">Nextcloud</a></td>
-                <td>Self-hosted, fully customizable, office suite included</td>
-                <td>Unlimited (self-hosted)</td>
-                <td>Free (self-hosted) or hosted options available</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.sync.com/" target="_blank">Sync.com</a></td>
-                <td>Zero-knowledge encryption, easy sharing</td>
-                <td>5GB free</td>
-                <td>Free plan, Pro from $8/mo</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.pcloud.com/" target="_blank">pCloud</a></td>
-                <td>Lifetime plans, media streaming</td>
-                <td>10GB free</td>
-                <td>Free plan, Premium from $4.99/mo</td>
-            </tr>
-        </table>
-
-        <h2>Office Suite (Google Docs/Sheets Alternatives)</h2>
-        <table>
-            <tr>
-                <th>App</th>
-                <th>Key Features</th>
-                <th>Platforms</th>
-                <th>Cost</th>
-            </tr>
-            <tr>
-                <td><a href="https://www.libreoffice.org/" target="_blank">LibreOffice</a></td>
-                <td>Full offline suite, MS Office compatible</td>
-                <td>Windows, Mac, Linux</td>
-                <td>Free</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.onlyoffice.com/" target="_blank">ONLYOFFICE</a></td>
-                <td>Online/offline, great MS Office compatibility</td>
-                <td>All platforms + web</td>
-                <td>Free community edition</td>
-            </tr>
-            <tr>
-                <td><a href="https://cryptpad.fr/" target="_blank">CryptPad</a></td>
-                <td>Zero-knowledge, real-time collaboration</td>
-                <td>Web-based</td>
-                <td>Free plan available, Premium from €5/mo</td>
-            </tr>
-        </table>
-
-        <h2>Video Calls (Google Meet Alternatives)</h2>
-        <table>
-            <tr>
-                <th>App</th>
-                <th>Key Features</th>
-                <th>Max Users</th>
-                <th>Cost</th>
-            </tr>
-            <tr>
-                <td><a href="https://jitsi.org/meet" target="_blank">Jitsi Meet</a></td>
-                <td>No account needed, screen sharing</td>
-                <td>50+ (self-hosted)</td>
-                <td>Free</td>
-            </tr>
-            <tr>
-                <td><a href="https://element.io/" target="_blank">Element</a></td>
-                <td>Encrypted calls, chat included</td>
-                <td>Varies by server</td>
-                <td>Free for basic use</td>
-            </tr>
-            <tr>
-                <td><a href="https://bigbluebutton.org/" target="_blank">BigBlueButton</a></td>
-                <td>Built for teaching, whiteboard</td>
-                <td>100+ (self-hosted)</td>
-                <td>Free (self-hosted)</td>
-            </tr>
-        </table>
-
-        <h2>Need Your Old Google Data?</h2>
-        <p>Before switching, get your data from Google using <a href="https://takeout.google.com/" target="_blank">Google Takeout</a>. This lets you download everything from emails to documents.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Replace Google Products. All rights reserved.</p>
-    </footer>
 </body>
 </html>

@@ -1,127 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Replace Google Search</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .w3-sidebar {width: 250px;}
+        .content-container {margin-left: 250px; padding: 20px;}
+        .hero {background-color: #1a73e8; color: white; padding: 60px; text-align: center;}
+    </style>
 </head>
 <body>
-    <!-- Menu -->
-    <menu>
-        <a href="index.html">Home</a>
-        <a href="android.html">Android</a>
-        <a href="googleapps.html">Google Apps</a>
-        <a href="browser.html">Browser</a>
-        <a href="search.html">Search</a>
-        <a href="references.html">References</a>
-    </menu>
 
-    <!-- Hero Section -->
-    <section class="hero">
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-card w3-light-grey" id="mySidebar">
+    <h3 class="w3-bar-item">Menu</h3>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="android.html" class="w3-bar-item w3-button">Android</a>
+    <a href="googleapps.html" class="w3-bar-item w3-button">Google Apps</a>
+    <a href="browser.html" class="w3-bar-item w3-button">Browser</a>
+    <a href="search.html" class="w3-bar-item w3-button">Search</a>
+    <a href="references.html" class="w3-bar-item w3-button">References</a>
+</nav>
+
+<!-- Page Content -->
+<div class="content-container">
+    <div class="hero">
         <h1>Replace Google Search</h1>
-        <p>Google tracks every search you make. Try these private alternatives that don't track you or create a profile about you.</p>
-    </section>
-
-    <!-- Content Section -->
-    <section class="content">
+        <p>Google tracks every search you make. Try these private alternatives that don’t track or profile you.</p>
+    </div>
+    
+    <div class="w3-container w3-padding">
+        <h2>Best Private Search Engines</h2>
+        <ul class="w3-ul w3-border">
+            <li><strong><a href="https://search.brave.com/" target="_blank">Brave Search</a>:</strong> Independent index, no tracking.</li>
+            <li><strong><a href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a>:</strong> Easy Google alternative, no search history stored.</li>
+            <li><strong><a href="https://www.startpage.com/" target="_blank">Startpage</a>:</strong> Google results without tracking.</li>
+            <li><strong><a href="https://www.mojeek.com/" target="_blank">Mojeek</a>:</strong> Fully independent, privacy-first search engine.</li>
+        </ul>
+        
         <h2>Why Switch from Google Search?</h2>
-        <p>Google Search is great at finding things, but it comes at a cost - your privacy. Google keeps track of:</p>
-        <ul>
-            <li>Everything you search for</li>
-            <li>Which results you click</li>
-            <li>Where you are when you search</li>
-            <li>What device you're using</li>
+        <ul class="w3-ul w3-border">
+            <li>Google tracks everything you search, your clicks, and even your location.</li>
+            <li>Search profiles are used to target ads and manipulate search rankings.</li>
+            <li>Private search engines don’t store your searches or personal data.</li>
         </ul>
-<p>It then sells this information to other companies, through their various google products, you are the commedity being sold with google.</p>
-        <h2>Private Search Options</h2>
-        <table>
-            <tr>
-                <th>Search Engine</th>
-                <th>Best For</th>
-                <th>Key Features</th>
-                <th>Results Quality</th>
-            </tr>
-            <tr>
-                <td><a href="https://search.brave.com/" target="_blank">Brave Search</a></td>
-                <td>Daily use</td>
-                <td>Own search index, no tracking, fast results</td>
-                <td>Very Good</td>
-            </tr>
-            <tr>
-                <td><a href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a></td>
-                <td>Easy switch from Google</td>
-                <td>Clean interface, !bang searches, no tracking</td>
-                <td>Good</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.startpage.com/" target="_blank">Startpage</a></td>
-                <td>Google-like results</td>
-                <td>Uses Google results privately, no tracking</td>
-                <td>Excellent</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.mojeek.com/" target="_blank">Mojeek</a></td>
-                <td>Unique results</td>
-                <td>Own search index, completely independent</td>
-                <td>Good</td>
-            </tr>
-        </table>
+    </div>
+</div>
 
-        <h2>Special Features Comparison</h2>
-        <table>
-            <tr>
-                <th>Feature</th>
-                <th>Brave Search</th>
-                <th>DuckDuckGo</th>
-                <th>Startpage</th>
-            </tr>
-            <tr>
-                <td>Independent Index</td>
-                <td>Yes</td>
-                <td>No</td>
-                <td>No</td>
-            </tr>
-            <tr>
-                <td>Anonymous View</td>
-                <td>Yes</td>
-                <td>Yes</td>
-                <td>Yes</td>
-            </tr>
-            <tr>
-                <td>Maps</td>
-                <td>Yes</td>
-                <td>Yes (OpenStreetMap)</td>
-                <td>Yes (Google Maps)</td>
-            </tr>
-            <tr>
-                <td>Image Search</td>
-                <td>Yes</td>
-                <td>Yes</td>
-                <td>Yes (Google Images)</td>
-            </tr>
-        </table>
-
-        <h2>Making the Switch Easy</h2>
-        <p>Here's how to switch your default search engine:</p>
-        <ul>
-            <li><strong>In Brave:</strong> Already set up with Brave Search</li>
-            <li><strong>In Firefox:</strong> Settings → Search → Choose your new search engine</li>
-            <li><strong>In Chrome:</strong> Settings → Search engine → Manage search engines → Add</li>
-            <li><strong>On Mobile:</strong> Install the search engine's app or change browser settings</li>
-        </ul>
-
-        <h2>Pro Tips</h2>
-        <ul>
-            <li>Try DuckDuckGo's "!bang" commands for direct searches on other sites</li>
-            <li>Use Startpage when you need Google-quality results but want privacy</li>
-            <li>Brave Search shows you what percentage of results are from their own index</li>
-            <li>All these options work on both computers and phones</li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Replace Google Products. All rights reserved.</p>
-    </footer>
 </body>
 </html>

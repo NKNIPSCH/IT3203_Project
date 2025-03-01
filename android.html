@@ -1,129 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Replace Android</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .w3-sidebar {
+            width: 250px;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .content-container {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .hero {
+            background-color: #1a73e8;
+            color: white;
+            padding: 60px;
+            text-align: center;
+        }
+        @media screen and (max-width: 768px) {
+            .w3-sidebar {
+                width: 100%;
+                position: relative;
+            }
+            .content-container {
+                margin-left: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Menu Updated --> */
-    <menu>
-        <a href="index.html">Home</a>
-        <a href="android.html">Android</a>
-        <a href="googleapps.html">Google Apps</a>
-        <a href="browser.html">Browser</a>
-        <a href="search.html">Search</a>
-        <a href="references.html">References</a>
-    </menu>
 
-    <!-- Hero Section -->
-    <section class="hero">
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-card w3-light-grey" id="mySidebar">
+    <h3 class="w3-bar-item">Menu</h3>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="android.html" class="w3-bar-item w3-button">Android</a>
+    <a href="googleapps.html" class="w3-bar-item w3-button">Google Apps</a>
+    <a href="browser.html" class="w3-bar-item w3-button">Browser</a>
+    <a href="search.html" class="w3-bar-item w3-button">Search</a>
+    <a href="references.html" class="w3-bar-item w3-button">References</a>
+</nav>
+
+<!-- Page Content -->
+<div class="content-container">
+    <div class="hero">
         <h1>Replace Android</h1>
         <p>Want a phone that respects your privacy? Here are some great options to reduce Google's control over your device.</p>
-    </section>
-
-    <!-- Content Section -->
-    <section class="content">
+    </div>
+    
+    <div class="w3-container w3-padding">
         <h2>Custom Android Systems</h2>
-        <p>These are special versions of Android with Google stripped out:</p>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Best For</th>
-                <th>Key Features</th>
-                <th>Difficulty</th>
-            </tr>
-            <tr>
-                <td><a href="https://e.foundation/" target="_blank">/e/ OS</a></td>
-                <td>Beginners</td>
-                <td>Easy to install, comes with app store, works like normal Android</td>
-                <td>Easy - they can install it for you</td>
-            </tr>
-            <tr>
-                <td><a href="https://lineageos.org/" target="_blank">LineageOS</a></td>
-                <td>Power users</td>
-                <td>Most supported phones, very stable, regular updates</td>
-                <td>Medium - needs some tech skills</td>
-            </tr>
-            <tr>
-                <td><a href="https://calyxos.org/" target="_blank">CalyxOS</a></td>
-                <td>Privacy fans</td>
-                <td>Super secure, works on Pixel phones, includes good apps</td>
-                <td>Medium - works on fewer phones</td>
-            </tr>
-        </table>
-
-        <h2>Alternative Phone Systems</h2>
-        <p>Want to try something completely different? Here are other mobile systems:</p>
-        <table>
-            <tr>
-                <th>System</th>
-                <th>Type</th>
-                <th>Key Features</th>
-                <th>Best For</th>
-            </tr>
-            <tr>
-                <td><a href="https://ubuntu-touch.io/" target="_blank">Ubuntu Touch</a></td>
-                <td>Linux</td>
-                <td>Desktop-like features, good privacy, open source</td>
-                <td>Linux fans, tech enthusiasts</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.pine64.org/pinephone/" target="_blank">PinePhone</a></td>
-                <td>Linux Phone</td>
-                <td>Physical switches for camera/mic, fully open hardware</td>
-                <td>Privacy experts, developers</td>
-            </tr>
-            <tr>
-                <td>iPhone</td>
-                <td>iOS</td>
-                <td>Built-in privacy features, long support, easy to use</td>
-                <td>General users wanting privacy</td>
-            </tr>
-        </table>
-
-        <h2>Privacy-Focused App Stores</h2>
-        <table>
-            <tr>
-                <th>Store</th>
-                <th>Apps Available</th>
-                <th>Key Features</th>
-                <th>Works With</th>
-            </tr>
-            <tr>
-                <td><a href="https://f-droid.org/" target="_blank">F-Droid</a></td>
-                <td>1000+</td>
-                <td>All open source, no tracking, shows privacy features</td>
-                <td>Any Android</td>
-            </tr>
-            <tr>
-                <td><a href="https://aurora.store/" target="_blank">Aurora Store</a></td>
-                <td>Same as Play Store</td>
-                <td>Get Play Store apps without Google account</td>
-                <td>Any Android</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.apkpure.com/" target="_blank">APKPure</a></td>
-                <td>Most Play Store apps</td>
-                <td>Direct APK downloads, no account needed</td>
-                <td>Any Android</td>
-            </tr>
-        </table>
-
-        <h2>Before You Switch</h2>
-        <p>Important things to remember:</p>
-        <ul>
-            <li>Back up your data using <a href="https://takeout.google.com/" target="_blank">Google Takeout</a></li>
-            <li>Check if your phone model is supported by your chosen system</li>
-            <li>Some banking apps might not work on custom Android systems</li>
-            <li>Keep your old system backed up in case you want to switch back</li>
+        <p>These are special versions of Android with Google services removed. They offer better privacy, security, and freedom.</p>
+        <ul class="w3-ul w3-border">
+            <li><strong><a href="https://e.foundation/" target="_blank">/e/ OS</a>:</strong> Easy to install, includes its own app store, Google-free experience.</li>
+            <li><strong><a href="https://lineageos.org/" target="_blank">LineageOS</a>:</strong> Popular among power users, supports many devices, regularly updated.</li>
+            <li><strong><a href="https://calyxos.org/" target="_blank">CalyxOS</a>:</strong> Focused on privacy and security, works best on Google Pixel devices.</li>
         </ul>
+        
+        <h2>Alternative Mobile Operating Systems</h2>
+        <p>If you want to move completely away from Android, consider these alternative mobile operating systems:</p>
+        <ul class="w3-ul w3-border">
+            <li><strong><a href="https://ubuntu-touch.io/" target="_blank">Ubuntu Touch</a>:</strong> Linux-based mobile OS, offers a unique experience.</li>
+            <li><strong><a href="https://www.pine64.org/pinephone/" target="_blank">PinePhone</a>:</strong> Open-source hardware, designed for privacy-conscious users.</li>
+            <li><strong>iPhone (iOS):</strong> While not open-source, iPhones offer better privacy controls than Google Android.</li>
+        </ul>
+        
+        <h2>Replacing Google Apps on Android</h2>
+        <p>Even if you don’t want to switch OS entirely, you can still reduce Google’s tracking by using alternative apps:</p>
+        <ul class="w3-ul w3-border">
+            <li><strong><a href="https://f-droid.org/" target="_blank">F-Droid</a>:</strong> Open-source app store with privacy-respecting apps.</li>
+            <li><strong><a href="https://aurora.store/" target="_blank">Aurora Store</a>:</strong> Lets you download Play Store apps anonymously.</li>
+            <li><strong><a href="https://www.apkpure.com/" target="_blank">APKPure</a>:</strong> Alternative APK store with a broad selection.</li>
+        </ul>
+        
+        <h2>Steps to Switch to a Privacy-Focused Android</h2>
+        <p>Transitioning away from Google's version of Android can be done step by step:</p>
+        <ol class="w3-ul w3-border">
+            <li><strong>Step 1:</strong> Check if your device supports alternative OS installations.</li>
+            <li><strong>Step 2:</strong> Back up all important data.</li>
+            <li><strong>Step 3:</strong> Choose an OS like LineageOS or CalyxOS and follow installation guides.</li>
+            <li><strong>Step 4:</strong> Install privacy-respecting apps and remove Google services.</li>
+            <li><strong>Step 5:</strong> Adjust settings for maximum privacy and enjoy a Google-free phone.</li>
+        </ol>
+    </div>
+</div>
 
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Replace Google Products. All rights reserved.</p>
-    </footer>
 </body>
 </html>
