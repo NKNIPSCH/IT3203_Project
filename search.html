@@ -4,25 +4,20 @@
     <title>Replace Google Search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-
+    <script src="menu.js" defer></script>
     <style>
-        .w3-sidebar {width: 250px;}
-        .content-container {margin-left: 250px; padding: 20px;}
-        .hero {background-color: #1a73e8; color: white; padding: 60px; text-align: center;}
+        .hero {
+            background-color: #1a73e8;
+            color: white;
+            padding: 60px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-card w3-light-grey" id="mySidebar">
-    <h3 class="w3-bar-item">Menu</h3>
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="android.html" class="w3-bar-item w3-button">Android</a>
-    <a href="googleapps.html" class="w3-bar-item w3-button">Google Apps</a>
-    <a href="browser.html" class="w3-bar-item w3-button">Browser</a>
-    <a href="search.html" class="w3-bar-item w3-button">Search</a>
-    <a href="references.html" class="w3-bar-item w3-button">References</a>
-</nav>
+<div id="menu"></div>
 
 <!-- Page Content -->
 <div class="content-container">
@@ -30,18 +25,18 @@
         <h1>Replace Google Search</h1>
         <p>Google tracks every search you make. Try these private alternatives that don’t track or profile you.</p>
     </div>
-    
-    <div class="w3-container w3-padding">
+
+    <div class="section">
         <h2>Best Private Search Engines</h2>
-        <ul class="w3-ul w3-border">
+        <ul class="custom-list">
             <li><strong><a href="https://search.brave.com/" target="_blank">Brave Search</a>:</strong> Independent index, no tracking.</li>
             <li><strong><a href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a>:</strong> Easy Google alternative, no search history stored.</li>
             <li><strong><a href="https://www.startpage.com/" target="_blank">Startpage</a>:</strong> Google results without tracking.</li>
             <li><strong><a href="https://www.mojeek.com/" target="_blank">Mojeek</a>:</strong> Fully independent, privacy-first search engine.</li>
         </ul>
-        
+
         <h2>Why Switch from Google Search?</h2>
-        <ul class="w3-ul w3-border">
+        <ul class="custom-list">
             <li>Google tracks everything you search, your clicks, and even your location.</li>
             <li>Search profiles are used to target ads and manipulate search rankings.</li>
             <li>Private search engines don’t store your searches or personal data.</li>

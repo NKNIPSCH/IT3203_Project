@@ -1,85 +1,97 @@
-/* Global Styles */
+/* glboal styles for all pagez */
 body {
-   font-family: Arial, sans-serif;
-   margin: 0;
-   padding: 0;
-   background-color: #f4f4f4;
-   color: #333;
-   line-height: 1.6;
-}
-
-/* Sidebar Navigation (W3.CSS Style) */
-.w3-sidebar {
-   width: 250px;
-   background-color: #f1f1f1;
-   position: fixed;
-   height: 100%;
-   overflow: auto;
-   padding-top: 20px;
-   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-.w3-sidebar a {
-   display: block;
-   color: black;
-   padding: 12px;
-   text-decoration: none;
-   font-weight: bold;
-   transition: 0.3s;
-}
-
-.w3-sidebar a:hover {
-   background-color: #ddd;
-}
-
-/* Main Content */
-.content-container {
-   margin-left: 260px; /* Adjust this to match sidebar width */
-   padding: 20px;
-   max-width: 1000px;
-}
-
-/* Hero Section */
-.hero {
-   padding: 80px 20px;
-   background-color: #1a73e8; /* Google blue */
-   color: white;
-   text-align: center;
-   font-size: 1.5em;
-   border-bottom: 4px solid #0d47a1;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-   .w3-sidebar {
-       width: 100%;
-       position: relative;
-   }
-   .content-container {
-       margin-left: 0;
-   }
-}
-
-/* Buttons & Links */
-button, .w3-button {
-   background-color: #1a73e8;
-   color: white;
-   border: none;
-   padding: 10px 15px;
-   cursor: pointer;
-   border-radius: 4px;
-}
-
-button:hover, .w3-button:hover {
-   background-color: #0d47a1;
-}
-
-/* Footer */
-footer {
-   background-color: #333;
-   color: white;
-   text-align: center;
-   padding: 15px 0;
-   width: 100%;
-   position: relative;
-}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+ }
+ 
+ /* Sidebar nav thingy */
+ .sidebar {
+    width: 250px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    padding-top: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 16px;
+ }
+ 
+ .sidebar-item {
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+ }
+ 
+ .sidebar-item:hover {
+    background-color: #ddd;
+ }
+ 
+ /* Main content wrapper */
+ .content-container {
+    margin-left: 260px;
+    padding: 20px;
+    max-width: 1000px;
+ }
+ 
+ /* Generic boxy section */
+ .section {
+    padding: 20px 0;
+ }
+ 
+ /* custom ul lists not google style lol */
+ .custom-list {
+    list-style-type: none;
+    padding-left: 0;
+ }
+ 
+ .custom-list li {
+    margin-bottom: 10px;
+    padding-left: 18px;
+    position: relative;
+ }
+ 
+ .custom-list li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #1a73e8;
+    font-weight: bold;
+ }
+ 
+ /* Buttons are blue like clouds */
+ button, .button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 5px;
+ }
+ 
+ button:hover, .button:hover {
+    background-color: #0d47a1;
+ }
+ 
+ /* responsivey magic */
+ @media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .content-container {
+        margin-left: 0;
+    }
+ }

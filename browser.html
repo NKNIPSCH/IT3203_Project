@@ -4,25 +4,15 @@
     <title>Replace Browser</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-
+    <script src="menu.js" defer></script>
     <style>
-        .w3-sidebar {width: 250px;}
-        .content-container {margin-left: 250px; padding: 20px;}
         .hero {background-color: #1a73e8; color: white; padding: 60px; text-align: center;}
     </style>
 </head>
 <body>
 
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-card w3-light-grey" id="mySidebar">
-    <h3 class="w3-bar-item">Menu</h3>
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="android.html" class="w3-bar-item w3-button">Android</a>
-    <a href="googleapps.html" class="w3-bar-item w3-button">Google Apps</a>
-    <a href="browser.html" class="w3-bar-item w3-button">Browser</a>
-    <a href="search.html" class="w3-bar-item w3-button">Search</a>
-    <a href="references.html" class="w3-bar-item w3-button">References</a>
-</nav>
+<div id="menu"></div>
 
 <!-- Page Content -->
 <div class="content-container">
@@ -30,18 +20,18 @@
         <h1>Replace Chrome Browser</h1>
         <p>Looking for a fast, private browser that works like Chrome but doesn’t spy on you? Here are some options.</p>
     </div>
-    
-    <div class="w3-container w3-padding">
+
+    <div class="section">
         <h2>Best Privacy-Focused Browsers</h2>
-        <ul class="w3-ul w3-border">
+        <ul class="custom-list">
             <li><strong><a href="https://brave.com/" target="_blank">Brave</a>:</strong> Blocks ads & trackers, fast browsing.</li>
             <li><strong><a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a>:</strong> Highly customizable, strong privacy features.</li>
             <li><strong><a href="https://www.librewolf.net/" target="_blank">LibreWolf</a>:</strong> Privacy-enhanced version of Firefox.</li>
             <li><strong><a href="https://www.torproject.org/" target="_blank">Tor Browser</a>:</strong> Maximum privacy, access .onion sites.</li>
         </ul>
-        
+
         <h2>Recommended Privacy Extensions</h2>
-        <ul class="w3-ul w3-border">
+        <ul class="custom-list">
             <li><strong><a href="https://ublockorigin.com/" target="_blank">uBlock Origin</a>:</strong> Best ad & tracker blocker.</li>
             <li><strong><a href="https://privacybadger.org/" target="_blank">Privacy Badger</a>:</strong> Learns to block trackers as you browse.</li>
             <li><strong><a href="https://decentraleyes.org/" target="_blank">Decentraleyes</a>:</strong> Prevents tracking through content delivery networks.</li>

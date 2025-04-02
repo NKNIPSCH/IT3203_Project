@@ -4,18 +4,8 @@
     <title>Replace Google Products</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-
+    <script src="menu.js" defer></script>
     <style>
-        .w3-sidebar {
-            width: 250px;
-            position: fixed;
-            height: 100%;
-            overflow: auto;
-        }
-        .content-container {
-            margin-left: 250px;
-            padding: 20px;
-        }
         .hero {
             background-color: #1a73e8;
             color: white;
@@ -23,10 +13,6 @@
             text-align: center;
         }
         @media screen and (max-width: 768px) {
-            .w3-sidebar {
-                width: 100%;
-                position: relative;
-            }
             .content-container {
                 margin-left: 0;
             }
@@ -36,15 +22,7 @@
 <body>
 
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-card w3-light-grey" id="mySidebar">
-    <h3 class="w3-bar-item">Menu</h3>
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="android.html" class="w3-bar-item w3-button">Android</a>
-    <a href="googleapps.html" class="w3-bar-item w3-button">Google Apps</a>
-    <a href="browser.html" class="w3-bar-item w3-button">Browser</a>
-    <a href="search.html" class="w3-bar-item w3-button">Search</a>
-    <a href="references.html" class="w3-bar-item w3-button">References</a>
-</nav>
+<div id="menu"></div>
 
 <!-- Page Content -->
 <div class="content-container">
@@ -52,29 +30,26 @@
         <h1>Replace Google Products</h1>
         <p>Helping you find privacy-focused alternatives to Google services.</p>
     </div>
-    
-    <div class="w3-container w3-padding">
+
+    <div class="section">
         <h2>Why Replace Google Products?</h2>
-        <p>Google dominates the tech world, but their practices often come at the cost of your privacy and freedom. Consider these reasons to switch:</p>
-        <ul class="w3-ul w3-border">
+        <ul class="custom-list">
             <li><strong>Privacy Concerns:</strong> Google collects massive amounts of data from your searches, emails, and location.</li>
             <li><strong>Monopoly Power:</strong> Their dominance limits competition and innovation.</li>
             <li><strong>Ethical Issues:</strong> Their business model revolves around tracking users.</li>
         </ul>
-        
+
         <h2>What This Website Offers</h2>
-        <p>We provide a collection of alternatives to Google services, categorized into different sections to help you make informed choices.</p>
-        <ul class="w3-ul w3-border">
+        <ul class="custom-list">
             <li><strong>Android Alternatives:</strong> Custom ROMs and non-Google mobile operating systems.</li>
             <li><strong>Google Apps Replacements:</strong> Secure and private alternatives to Gmail, Drive, and Docs.</li>
             <li><strong>Private Browsing:</strong> Secure browsers that don't track your data.</li>
             <li><strong>Search Engine Privacy:</strong> Search engines that don’t store your history.</li>
             <li><strong>References & Resources:</strong> Verified sources for additional research.</li>
         </ul>
-        
+
         <h2>How to Start Replacing Google Products</h2>
-        <p>Switching from Google can seem overwhelming, but breaking it down step by step makes it manageable. Follow these steps:</p>
-        <ol class="w3-ul w3-border">
+        <ol class="custom-list">
             <li><strong>Step 1:</strong> Download your data from <a href="https://takeout.google.com/" target="_blank">Google Takeout</a>.</li>
             <li><strong>Step 2:</strong> Choose alternative services from our recommendations.</li>
             <li><strong>Step 3:</strong> Transfer important files, emails, and data.</li>
